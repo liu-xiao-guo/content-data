@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "starting to create a file in the producer's common directory"
+echo "This is good" >> /var/snap/hello-producer/common/test.txt
+
+echo "If you see this, it is successful to write to the common directory!!!"
+
+

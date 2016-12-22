@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Hello World in producer!"
+read -p "Press any key to continue... " 

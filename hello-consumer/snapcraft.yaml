@@ -1,0 +1,22 @@
+name: hello-consumer
+version: "1.0"
+summary: The 'hello-consumer' snap
+description: |
+    This is a simple snap example showing how to share content
+grade: stable
+confinement: strict
+type: app  #it can be gadget or framework
+
+apps:
+ echo:
+   command: bin/echo_consumer
+
+plugs:
+  content:
+    content: writable-data
+    target: $SNAP_COMMON
+
+parts:
+ hello:
+  plugin: dump
+  source: .
