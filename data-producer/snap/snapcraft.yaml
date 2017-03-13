@@ -1,18 +1,19 @@
-name: hello-producer
+name: content-data-producer
 version: "1.0"
-summary: The 'hell-producer' snap
+summary: The 'content-data-producer' snap
 description: |
     This is a simple snap example showing how to share content
+
 grade: stable
 confinement: strict
-type: app  #it can be gadget or framework
 
 apps:
  echo:
    command: bin/echo_producer
 
 slots:
-  content:
+  content2:
+    interface: content
     content: writable-data
     write: 
       - $SNAP_COMMON
